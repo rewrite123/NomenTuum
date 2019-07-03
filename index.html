@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- For free Font Awesome crap -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+	<!-- For timeline.js -->
+	<link rel="stylesheet" href="css/timeline.css" />
+	<script type="text/javascript" src="js/timeline.js"></script>
+
+	<!-- For Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Aldrich" rel="stylesheet">
+
+	<link href="css/main.css" rel="stylesheet" />
+	<script src="js/main.js" type="text/javascript"></script>
+
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+</head>
+
+<body>
+
+	<!-- For some reason, it is neccessary to declare this out of any container for it to be shown properly on ios -->
+	<div class="modal fade" id="sorryModal" tabindex="-1" role="dialog" aria-labelledby="sorryModalTitle" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="sorryModalTitle">Pssssss, you can hire me if you like</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<strong><i class="far fa-frown"></i>Sorry, but this is just an example one page site. </strong>
+					<p>But you can view more of my work on <a href="https://github.com/rewrite123" target="_blank" rel="noopener noreferrer">Github</a> and <a href="https://www.linkedin.com/in/isaac-hormel-199180118?trk=people-guest_profile-result-card_result-card_full-click" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">That's pretty cool</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Nomen Tuum</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" data-toggle="modal" data-target="#sorryModal">Contact</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Download
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#" data-toggle="modal" data-target="#sorryModal">Windows</a>
+						<a class="dropdown-item" href="#" data-toggle="modal" data-target="#sorryModal">Mac OS</a>
+						<a class="dropdown-item" href="#" data-toggle="modal" data-target="#sorryModal">Ubuntu/Debian</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item disabled text-muted">IOS/Android available in app store</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" data-toggle="modal" data-target="#sorryModal">Privacy</a>
+				</li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0 nav-item">
+				<a class="nav-link" href="#" data-toggle="modal" data-target="#sorryModal">Create an account</a>
+			</form>
+		</div>
+	</nav>
+
+	<div class="jumbotron text-center" id="welcomePop">
+		<h1 class="display-4">Welcome!</h1>
+	</div>
+
+	<div class="card card-image image-background" style="background-image: url(media/business-1.jpg);" title="Photo by David Hurley">
+		<div class="text-white text-heaven text-center rgba-stylish-strong py-5 px-4">
+			<div class="py-5 vertical-center">
+				<div class="text-center" style="width: 100%;">
+					<h2 class="card-title h2 my-4 py-2"><strong>Nomen Tuum</strong></h2>
+					<p class="mb-4 pb-2 px-md-5 mx-md-5">This is an example website for a fictitious image sharing company made by Isaac Hormel, rewrite123 on github, as part of his portfolio. If you like it, please consider hiring him ;)</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br/>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h1>Nomen Tuum</h1>
+			</div>
+		</div>
+		<hr/>
+		<div class="row text-center" id="iconSelector">
+			<ul class="nav text-center" style="width: auto; margin: auto;">
+				<li class="nav-item" style="margin: 5px;" id="planeIconSelector">
+					<button style="font-size: 28px;" class="btn btn-dark fa fa-plane"></button>
+				</li>
+				<li class="nav-item" style="margin: 5px;" id="shareIconSelector">
+					<button style="font-size: 28px;" class="btn btn-dark fa fa-share-square"></button>
+				</li>
+				<li class="nav-item" style="margin: 5px;" id="cloudIconSelector">
+					<button style="font-size: 28px;" class="btn btn-dark fa fa-cloud"></button>
+				</li>
+				<li class="nav-item" style="margin: 5px;" id="eyeIconSelector">
+					<button style="font-size: 28px;" class="btn btn-dark fa fa-eye"></button>
+				</li>
+			</ul>
+		</div>
+		<div class="row">
+			<div class="col-md text-center"  id="planeContentSelector">
+				<div class="card h-100">
+					<div class="card-body">
+						<h5 class="card-title">With you every step of the way</h5>
+						<h6 class="card-subtitle text-muted">Especially when traveling</h6>
+						<hr/>
+						<h6 class="card-subtitle text-muted"><i class="fa fa-plane" aria-hidden="true"></i></h6>
+						<p class="card-text">Curabitur leo lectus, porta vitae purus ac, tristique porttitor neque. Proin pharetra a nibh at accumsan. Proin tristique metus a quam tincidunt euismod.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md text-center"  id="shareContentSelector">
+				<div class="card h-100">
+					<div class="card-body">
+						<h5 class="card-title">Anytime, anywhere</h5>
+						<h6 class="card-subtitle text-muted">Take and share photos on the go</h6>
+						<hr/>
+						<h6 class="card-subtitle text-muted"><i class="fa fa-share-square" aria-hidden="true"></i></h6>
+						<p class="card-text">Donec et molestie arcu. Suspendisse a odio vulputate, auctor est in, rhoncus orci. Donec id arcu ligula. Quisque bibendum, magna in consectetur convallis, libero turpis vestibulum nisi, id condimentum nulla velit eu nisi.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md text-center" id="cloudContentSelector">
+				<div class="card h-100">
+					<div class="card-body">
+						<h5 class="card-title">Click, save, done</h5>
+						<h6 class="card-subtitle text-muted">Get, Post, Put, Delete</h6>
+						<hr/>
+						<h6 class="card-subtitle text-muted"><i class="fa fa-cloud" aria-hidden="true"></i></i></h6>
+						<p class="card-text">Quisque id odio ut ipsum sagittis ultrices. Suspendisse a magna dapibus, laoreet diam at, imperdiet ante. Pellentesque vel laoreet ex. Curabitur justo lectus, rutrum ac ornare a, tempor sit amet neque. Sed lacus elit, pharetra non tincidunt vel, fermentum euismod nisl.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md text-center"  id="eyeContentSelector">
+				<div class="card h-100">
+					<div class="card-body">
+						<h5 class="card-title">Share or private</h5>
+						<h6 class="card-subtitle text-muted">It's all the same to us</h6>
+						<hr/>
+						<h6 class="card-subtitle text-muted"><i class="fa fa-eye" aria-hidden="true"></i></h6>
+						<p class="card-text">Curabitur pharetra faucibus odio ut varius. Donec quis ornare dui. Nam ullamcorper elit id porta porttitor.</p>
+						<button class="text-muted btn btn-light" data-toggle="modal" data-target="#sorryModal">More on our your privacy</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br/>
+	<div class="card card-image image-background" style="background-image: url(media/business-8.jpg);" title="Photo by Simon Migaj">
+		<div class="text-center rgba-stylish-strong py-5 px-4">
+			<div class="py-5 vertical-center">
+				<div class="text-center text-white text-contrast" style="width: 100%;">
+					<h1 class="card-title h1 my-4 py-2"><strong>Nomen Tuum</strong></h1>
+					<p class="mb-4 pb-2 px-md-5 mx-md-5">Photo sharing like never before</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br/>
+
+	<div class="container-fluid">
+		<div class="row" style="padding-bottom: 70px;">
+			<div class="col-md-5">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Nomen Tuum</h5>
+						<h6 class="card-subtitle text-muted">A name you can trust</h6>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis tincidunt arcu, molestie tincidunt quam pulvinar eget. Duis ac condimentum mauris. Nam euismod massa at tempor luctus. Nam ullamcorper elit id porta porttitor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean maximus eu nulla vel dictum. Donec eleifend eu dolor non viverra. Pellentesque tristique non est in iaculis.</p>
+						<button class="btn btn-light" onclick="restartSlide()">See more of our history</button >
+					</div>
+				</div>
+			</div>
+			<div class="col-md-7">
+				<div class="timeline-container timeline-theme-1" id="idHandler">
+					<div class="timeline js-timeline">
+						<div data-time="2011" id="timeline-clicker">
+							<div class="timeline-background" style="background-image: url(media/business-2.jpg);" title="Photo by Danielle MacInnes">
+								<div class="timeline-vertical-center" style="width: 100%;">
+									<div class="text-center text-white" style="width: 100%;">
+										<h3><strong>Nomen Tuum founding</strong></h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div data-time="2013">
+							<div class="timeline-background" style="background-image: url(media/business-3.jpg);" title="Photo by Annie Spratt">
+								<div class="timeline-vertical-center" style="width: 100%;">
+									<div class="text-center text-white" style="width: 100%;">
+										<h3><strong>Nomen Tuum grows into a team of 5 and gets a much needed professional workspace</strong></h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div data-time="2015">
+							<div class="timeline-background" style="background-image: url(media/business-4.jpg);" title="Photo by Stephen Dawson">
+								<div class="timeline-vertical-center" style="width: 100%;">
+									<div class="text-center text-white" style="width: 100%;">
+										<h3><strong>Our profits finally exceed expenses, and initial investors begin to recieve payment</strong></h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div data-time="2016">
+							<div class="timeline-background" style="background-image: url(media/business-5.jpg);" title="Photo by Kelsey Knight">
+								<div class="timeline-vertical-center" style="width: 100%;">
+									<div class="text-center text-white" style="width: 100%;">
+										<h3><strong>We reach over one million users in over 30 countries!</strong></h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div data-time="2019">
+							<div class="timeline-background" style="background-image: url(media/business-6.jpg);" title="Photo by Jason Leung">
+								<div class="timeline-vertical-center" style="width: 100%;">
+									<div class="text-center text-white" style="width: 100%;">
+										<h3><strong>Nomen Tuum is rated one of the top 100 businesses to work for by Forbees magazine</strong></h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br/>
+	<div class="card card-image image-background" style="background-image: url(media/business-7.jpg);" title="Photo by William Moreland">
+		<div class="text-white text-contrast ext-center rgba-stylish-strong py-5 px-4">
+			<div class="py-5 vertical-center">
+				<div class="text-center" style="width: 100%;">
+					<h2 class="card-title h2 my-4 py-2"><strong>Nomen Tuum</strong></h2>
+					<p class="mb-4 pb-2 px-md-5 mx-md-5">Moments are meant to be shared</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br/>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8 text-center" style="min-height: 400px;">
+				<div class="text-center"  style="height: 15%; min-height: 100px;">
+					<h1 class="" style="font-family: "Aldrich";">Stylish, Sexy, Sleek</h1>
+					<p class="text-muted">A filter to make your photos look professional</p>
+				</div>
+				<div class="text-center" style="height: 85%; min-height: 300px;">
+					<div id="carouselExampleIndicators" class="carousel slide h-100" data-ride="carousel" style="">
+						<ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+						</ol>
+						<div class="carousel-inner h-100">
+							<div class="carousel-item h-100 active">
+								<div class="timeline-background " style="background-image: url(media/business-10.jpg);" title="Photo by Mohammad Metri">
+									<div class="carousel-caption d-md-block text-contrast">
+										<h5>B&W</h5>
+										<p>Black and White photos on demand</p>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item h-100">
+								<div class="timeline-background " style="background-image: url(media/business-11.jpg);" title="Photo by Harry Quan">
+									<div class="carousel-caption text-contrast">
+										<h5>LGBTQAAIPNC</h5>
+										<p>Signal your virtues to others with LGBTQAAIPNC!</p>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item h-100">
+								<div class="timeline-background " style="background-image: url(media/business-12.jpg);" title="Photo by Dominik QN">
+									<div class="carousel-caption text-contrast">
+										<h5>Color-Fix</h5>
+										<p>Boring photos suddenly become pretty with our Color-Fix filter</p>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item h-100">
+								<div class="timeline-background " style="background-image: url(media/business-13.jpg);" title="Photo by Loudge">
+									<div class="carousel-caption text-contrast">
+										<h5>Timey</h5>
+										<p>Bring back timeless memories with Timey</p>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item h-100">
+								<div class="timeline-background " style="background-image: url(media/business-14.jpg);" title="Photo by Cody Davis">
+									<div class="carousel-caption text-contrast">
+										<h5>Select-Flood</h5>
+										<p>Easily select specific areas to color with our Select-Flood filter</p>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item h-100">
+								<div class="timeline-background " style="background-image: url(media/business-15.jpg);" title="Photo by Simon Matzinger">
+									<div class="carousel-caption text-contrast">
+										<h5>Siphon</h5>
+										<p>Show true colors beneath the grime with Siphon</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 text-center">
+				<h3>Get the app</h3>
+				<p class="text-muted">Look for Nomen Tuum on the app store</p>
+				<div class="text-center">
+					<div id="phoneDisplay" class="phone-display">
+						<div style="max-width: 450px; width: 100%">
+							<span class="h3">
+								Your images
+								<span class="fas fa-bars float-right h2" style="margin: 5px;"></span>
+							</span>
+							<hr/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br/>
+	<div class="card card-image image-background" style="background-image: url(media/business-9.jpg);" title="Photo by chang duong">
+		<div class="text-center rgba-stylish-strong py-5 px-4">
+			<div class="py-5 vertical-center">
+				<div class="text-center" style="width: 100%;">
+					<h2 class="card-title h2 my-4 py-2"><strong>Nomen Tuum</strong></h2>
+					<p class="mb-4 pb-2 px-md-5 mx-md-5">This is an example business-site made by Isaac Hormel, rewrite123 on github, as part of his portfolio. If you like it, please consider hiring him ;)</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br/>
+
+	<footer id="footer" class="bg-light pt-4">
+		<div class="container-fluid text-center text-md-left">
+			<div class="row">
+				<div class="col-md-6 mt-md-0 mt-3">
+					<h5 class="text-uppercase">About Us</h5>
+					<p>This is an example business-site made by Isaac Hormel, rewrite123 on github, as part of his portfolio. If you like it, please consider hiring him ;)</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<hr class="clearfix w-100 d-md-none pb-3">
+				<div class="col-md-3 mb-md-0 mb-3">
+					<h5 class="text-uppercase">Info</h5>
+					<ul class="list-unstyled">
+						<li>
+							<a href="#" class="text-dark" style="text-decoration: none;" data-toggle="modal" data-target="#sorryModal">Find Out More</a>
+						</li>
+						<li>
+							<a href="#" class="text-dark" style="text-decoration: none;" data-toggle="modal" data-target="#sorryModal">Contact Us</a>
+						</li>
+						<li>
+							<a href="#" class="text-dark" style="text-decoration: none;" data-toggle="modal" data-target="#sorryModal">FAQ</a>
+						</li>
+						<li>
+							<a href="#" class="text-dark" style="text-decoration: none;" data-toggle="modal" data-target="#sorryModal">Privacy Policy</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3 mb-md-0 mb-3">
+					<h5 class="text-uppercase">Find us online</h5>
+					<ul class="list-unstyled text-muted">
+						<li>
+							<a href="#" class="text-dark" style="text-decoration: none;" data-toggle="modal" data-target="#sorryModal"><i style="font-size: 48px; margin-right: 5px;" class="fab fa-facebook-square"></i>facebook</a>
+						</li>
+						<li>
+							<a href="#" class="text-dark" style="text-decoration: none;" data-toggle="modal" data-target="#sorryModal"><i style="font-size: 48px; margin-right: 5px;" class="fab fa-instagram"></i>Instagram</a>
+						</li>
+						<li>
+							<a href="#" class="text-dark" style="text-decoration: none;" data-toggle="modal" data-target="#sorryModal"><i style="font-size: 48px; margin-right: 5px;" class="fab fa-snapchat-square"></i>Snapchat</a>
+						</li>
+						<li>
+							<a href="#" class="text-dark" style="text-decoration: none;" data-toggle="modal" data-target="#sorryModal"><i style="font-size: 48px;" class="fab fa-twitter"></i>Twitter</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright text-center py-3">&copy; Not Copyright:
+			<a href="https://github.com/rewrite123" target="_blank" rel="noopener noreferrer">rewrite123 on github ;)</a>
+		</div>
+	</footer>
+
+</body>
+
+</html>
